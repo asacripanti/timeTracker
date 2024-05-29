@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](/timeTracker/src/assets/images/timeTrackerDesktop.png)
+![Desktop View](/assets/images/timeTrackerDesktop.png)
 
 ![Mobile View](/timeTracker/src/assets/images/timeTrackerMobile.png)
 
