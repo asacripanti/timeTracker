@@ -1,0 +1,78 @@
+@media(max-width: 375px){
+    body{
+        width: 375px;
+        height: 1400px;
+        flex-direction: column;
+    }
+
+    .homePageShell{
+        width: 290px;
+        flex-direction: column;
+    }
+
+    .profileSection, .timeBlockShell{
+        height: 140px;
+        width: 290px;
+    }
+
+    .timeBlockSection{
+        flex-direction: column;
+    }
+
+    .timeBlockTitleSection{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .timeBlockContent{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100px;
+        padding: 20px;
+    }
+
+    .timeBlockInputSection{
+        width: 100px;
+        margin: 0;
+    }
+
+    .timeBlockBtn{
+        margin-left: 130px;
+        bottom: 0px;
+    }
+
+    .timeBlockLastWeekHours{
+        position: absolute;
+        left: 175px;
+        bottom: 35px;
+    }
+
+    .profilePicShell{
+        margin-bottom: 0px;
+    }
+
+    .profileInfo{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .profileReportFor{
+        width: 100px;
+        position: absolute;
+        left: 108px;
+    }
+
+    .profileName{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .toggleBtnSection{
+        flex-direction: row;
+    }
+}

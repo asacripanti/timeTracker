@@ -29,7 +29,7 @@ export default function Homepage(){
     const [lastSelfCareHours, setLastSelfCareHours] = React.useState("2");
     
     function dailyView(){
-        setDisplayView(prevView => "Today");
+        setDisplayView(prevView => "Yesterday");
         setDailyActive(prevView => "toggleBtnActive");
         setWeeklyActive(prevView => "toggleBtn");
         setMonthlyActive(prevView => "toggleBtn");
@@ -92,9 +92,12 @@ export default function Homepage(){
         <div className="homePageShell">
             <section className="profileSection">
                 <Profile />
-                <button id="toggleBtnDaily" className={dailyActive} onClick={dailyView}>Daily</button>
-                <button id="toggleBtnWeekly" className={weelklyActive} onClick={weeklyView}>Weekly</button>
-                <button id="toggleBtnMonthly" className={monthlyActive}  onClick={monthlyView}>Monthly</button>
+                <section className="toggleBtnSection">
+                    <button id="toggleBtnDaily" className={dailyActive} onClick={dailyView}>Daily</button>
+                    <button id="toggleBtnWeekly" className={weelklyActive} onClick={weeklyView}>Weekly</button>
+                    <button id="toggleBtnMonthly" className={monthlyActive}  onClick={monthlyView}>Monthly</button>
+                </section>
+              
             </section>
             <section className="timeBlockSection">
                 <Timeblock title="Work" hours={workHours} lastWeek={lastWorkHours} color="hsl(15, 100%, 70%)" img={iconWork} displayView={displayView}/>

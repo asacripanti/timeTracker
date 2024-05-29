@@ -18,7 +18,6 @@ body{
   display: flex;
   align-items: center;
   width: 800px;
-  /* border: solid 1px red; */
 }
 
 .profileSection{
@@ -31,7 +30,6 @@ body{
 }
 
 .profileShell{
-  /* border: solid 1px green; */
   display: flex;
   flex-direction: column;
   background-color: hsl(235, 46%, 20%);
@@ -54,15 +52,12 @@ body{
 }
 
 .profilePicture{
-  /* width: 100px; */
-  /* border-radius: 100px; */
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .profilePicShell{
-  /* background-image: url("./assets/images/profilePic.jpeg"); */
   width: 50px;
   height: 50px;
   overflow: hidden;
@@ -81,6 +76,7 @@ body{
   font-weight: lighter;
   font-size: 12px;
   margin-bottom: 5px;
+  color: hsl(236, 100%, 87%);
 }
 
 
@@ -90,7 +86,6 @@ body{
 }
 
 .timeBlockShell{
-  /* border: solid 1px purple; */
   width: 180px;
   height: 180px;
   border-radius: 10px;
@@ -100,10 +95,6 @@ body{
   justify-content: flex-end;
   position: relative;
   overflow: hidden;
-  /* background-image: url('../assets/images/icon-exercise.svg');
-  background-size: cover;
-  background-position: center;  */
-  /* background-repeat: no-repeat;  */
 }
 
 .timeBlockContent{
@@ -129,7 +120,6 @@ body{
 
 .timeBlockTitleSection{
   display: flex;
-  /* justify-content: space-around; */
   margin-top: 15px;
   margin-bottom: 30px;
   width: 100%;
@@ -148,7 +138,8 @@ body{
   cursor: pointer;
   position: absolute;
   left: 100px;
-  /* font-size: 16px; */
+  font-size: 16px;
+  font-weight: bold;
   color: hsl(236, 100%, 87%);
   letter-spacing: 2px;
 }
@@ -185,7 +176,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .timeBlockHoursText{
   margin: 0;
-
 }
 
 .timeBlockImg{
@@ -208,16 +198,16 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
   margin-bottom: 10px;
   margin-left: 10px;
-  /* color: gray; */
+
 }
 
-/* .toggleBtn:hover{
-  color: white;
-} */
-
-/* #toggleBtnDaily:hover, #toggleBtnWeekly:hover, #toggleBtnMonthly:hover{
-  color: white;
-} */
+.toggleBtnSection{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
 
 .toggleBtn{
   color: hsl(235, 45%, 61%);
@@ -232,10 +222,3 @@ input[type="number"]::-webkit-inner-spin-button {
   color: white;
 }
 
-#toggleBtnWeekly{
-
-}
-
-#toggleBtnMonthly{
-
-}
